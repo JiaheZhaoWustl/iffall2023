@@ -1,0 +1,135 @@
+html{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+header {
+    text-align: center;
+    justify-content: center;
+    width:100%;
+    background-image: url("abstractOne.jpg");
+}
+
+h1, h2, h3, p{
+    margin: 0;
+}
+
+.column-container {
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    text-align: center;
+    font-size: 40px;
+}
+
+h4 {
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 10px;
+}
+
+p {
+    line-height: 24.3px;
+    padding-top: 35px;
+    padding-left: 255px;
+    padding-right: 265px;
+    font-size: 18px;
+}
+
+header .column-container {
+    padding-top: 150px;
+    padding-bottom: 180px;
+}
+
+section .column-container {
+    padding-top: 40px;
+    background-color: darksalmon;
+    padding-bottom: 55px;
+}
+
+.portrait {
+    float: right;
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+    margin: 35px;
+    padding-right: 220px;
+    margin-left: 45px;
+}
+
+section .grid-container {
+    padding-top: 40px;
+    background-color:rgb(163, 240, 255);
+    padding-bottom: 35px;
+}
+
+.using-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 215px;
+    margin-right: 220px;
+    padding-right: 40px;
+    list-style-type: none;
+}
+
+.using-grid img {
+    width: 200px;
+    height: 150px;
+    float: left;
+    margin-bottom: 25px;
+}
+
+div.a {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 215px;
+    margin-bottom: 10px;
+}
+
+div.b {
+    margin-left: 215px;
+    padding-right: 50px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+section .centered-container {
+    padding-top: 40px;
+    background-color:rgb(97, 255, 165);
+    padding-bottom: 95px;
+}
+
+div.c {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 385px;
+    margin-right: 385px;
+    line-height: 1.5;
+    letter-spacing: 0.25px;
+}
+
+section .copyright-container{
+    padding-top: 45px;
+    background-color:rgb(255, 97, 97);
+    padding-bottom: 40px;
+}
+
+
+div.d {
+    margin-left: 260px;
+    padding-right: 50px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
