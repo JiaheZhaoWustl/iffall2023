@@ -1,0 +1,17 @@
+*{padding: 0;margin: 0;}
+ul li{list-style: none;}
+ol li{list-style: none;}
+.solid{border: 1px solid red;}
+a{text-decoration: none; color: black;}
+.pw{width: 90%;margin: 0 auto;}
+.fl{float: left;}
+.fr{float: right;}
+.cn{margin: 0 auto;}
+.clearF::after{content: " ";display: block;clear: both;}/*清除浮动*/
+.flex-between {display: flex;justify-content: space-between;}
+
+body {background: #333333;}
+
+
+
+
