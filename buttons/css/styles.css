@@ -1,0 +1,658 @@
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+     font-size: 30px;
+     margin-bottom: 40px;
+}
+
+.button_container {
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 0;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+
+a#btn_spotify {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px 40px 0 40px;
+    background-color: #2ebd59;
+    border: 2px solid #2ebd59;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a#btn_spotify:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+a#btn_amazon {
+    display: block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 75px;
+    padding-top: 8px;
+    background-color: #232f3e;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    transition: all .2s;
+}
+
+a#btn_amazon:hover {
+    background-color: #fc9a18;
+}
+
+a#btn_twitter {
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 105px;
+    padding: 10px 30px 0 30px;
+    background-color: #56cdf1;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a#btn_twitter:hover {
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+    background: rgb(46,191,236); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(46,191,236,1) 0%, rgba(40,165,203,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(46,191,236,1) 0%,rgba(40,165,203,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2ebfec', endColorstr='#28a5cb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+a#btn_indiegogo {
+    display: inline-block;
+    position: relative;
+    margin:auto;
+    margin-top: 100px;
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #eb1478;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: -2px;
+    transition: all .2s;
+}
+
+a#btn_indiegogo:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #eb1478;
+    transition: all .5s;
+}
+
+a#btn_indiegogo:hover {
+    color: #fff;
+}
+
+a#btn_indiegogo:hover:before {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+a#btn_indiegogo span {
+    position: relative;
+    z-index: 10;
+}
+
+/* Jason Zhao's work:  */
+
+a#btn_us_army {
+    display: inline-block;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 110px;
+    padding: 12px 10px 0 10px;
+    background-color: #000000;
+    border: 2px solid #FFCB05;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Rubik Mono One', monospace;
+    font-weight: normal;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a#btn_us_army:hover {
+    margin-top: 90px;
+    width: 75%;
+    height: 80px;
+    padding: 0px 10px 0 10px;
+    animation: changeColor 0.5s ease forwards;
+
+    .fa-star {
+        visibility: hidden;
+    }
+  }
+
+  @keyframes changeColor {
+    from {
+      background-color: #000000;
+      color: #ffffff;
+      border-color: #FFCB05;
+    }
+    to {
+      background-color: #FFCB05;
+      color: #000000;
+      border-color: #FFCB05;
+    }
+  }
+
+/* Not sure why it works here, but do not modify anything for US Army */
+  
+a#btn_newyorker {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    margin-top: 90px;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0px;
+    transition: all .2s;
+}
+
+a#btn_newyorker:hover {
+    animation: changeType 0.5s ease-in-out infinite;
+}
+
+    @keyframes changeType {
+        0% {font-family: 'Rubik Mono One', monospace;}
+        25% {font-family: 'BioRhyme', serif;}
+        50% {font-family: 'Ubuntu', sans-serif;}
+        75% {font-family: 'Lobster', sans-serif;}
+        100% {font-family: 'EB Garamond', serif;}
+}
+
+/* Feedback for speed change? */
+
+a#btn_cocacola {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    width: 100px;
+    height: 120px;
+    border-radius: 60px;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-image: url("wave.png");
+
+    margin-top: 10px;
+    padding: 85px 25px 25px 25px;
+    background-color: #F40009;
+    color: #ffffff;
+    font-family: "signo", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 40px;
+    text-decoration: none;
+    letter-spacing: 0px;
+    transition: all .2s;
+}
+
+/* below works with animation hover - 2 different loop at same time with comma */
+
+a#btn_cocacola:hover {
+    animation: flow 0.5s linear infinite, colaColor 0.5s linear forwards;
+}
+    @keyframes flow {
+        from {
+          background-position: -300px 0px;
+        }
+        to {
+          background-position: 0px 0px;
+        }
+    }
+
+    @keyframes colaColor {
+        from {
+            color: #ffffff;
+        }
+        to {
+            color: #000000;
+        }
+    }
+
+/* CocaCola */
+
+a#btn_nike {
+    display: inline-block;
+    height: 55px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-size: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 40px;
+    letter-spacing: -2px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 30px 0 30px;
+    margin: auto;
+    margin-top: 105px;
+}
+
+a#btn_nike:hover {
+    animation: nikeLogo 1s ease-in-out;
+}
+
+@keyframes nikeLogo {
+    0% {
+        background-image: url("nike.png");
+        background-position-y: center;
+        background-color: transparent;
+        color: transparent;
+    }
+    60% {
+        background-color: transparent;
+        color: rgb(0, 0, 0);
+    }
+    100% {
+        background-color: #000000;
+        color: #ffffff;
+    }
+}
+
+/* Nike logo's animation is dropping down for some reason */
+
+a#btn_apple {
+    display: inline-block;
+    height: 55px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: solid 2px #000000;
+    background-size: 100%;
+    background-color: transparent;
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: -2px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 30px 0 30px;
+    margin: auto;
+    margin-top: 105px;
+}
+
+a#btn_apple:hover {
+    animation: appleLogo 1s ease-in-out;
+    background-color: black;
+    color: white;
+}
+
+@keyframes appleLogo {
+    0% {
+        background-image: url("apple.jpg");
+        background-position: left;
+        background-size: contain;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        color: transparent;
+        opacity: 100%;
+    }
+    50% {
+        background-image: url("apple.jpg");
+        background-position: right;
+        background-size: contain;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        color: transparent;
+        opacity: 50%;
+    }
+    100% {
+        background-image: url("apple.jpg");
+        background-position: left;
+        background-size: contain;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        color: transparent;
+        opacity: 100%;
+        box-shadow: inset -140px 0 0 0 black;
+    }
+}
+
+/* slide left speed doesn't match apple moving speed here */
+
+a#btn_ideo {
+    display: inline-block;
+    height: 55px;
+    box-sizing: border-box;
+    border-radius: 0px;
+    background-size: 100%;
+    background-color: #7b7b7b;
+    color: #ffffff;
+    font-size: 40px;
+    letter-spacing: -2px;
+    font-family: "stint-ultra-expanded", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 5px 30px 0 30px;
+    margin: auto;
+    margin-top: 105px;
+}
+
+a#btn_ideo:hover {
+    animation: ideoCorner 1s ease-in-out;
+    border-radius: 30px;
+    background-color: #7b7b7b;
+    color: white;
+}
+
+@keyframes ideoCorner {
+    0% {
+        border-radius: 0px;
+        background-color: #7b7b7b;
+    }
+    20% {
+        border-top-left-radius: 30px;
+    }
+    40% {
+        border-top-right-radius: 30px;
+        background-color: #000000;
+    }
+    60% {
+        border-bottom-right-radius: 30px;
+    }
+    80% {
+        border-bottom-left-radius: 30px;
+    }
+    100% {
+        border-radius: 30px;
+        background-color: #7b7b7b;
+        color: white;
+    }
+}
+
+/* corner radius animation a bit awkward */
+
+a#btn_hasbro {
+    display: inline-block;
+    margin-top: 100px;
+    position: relative;
+    padding: 16px 30px;
+    font-size: 1.5rem;
+    color: var(--color);
+    font-family: "interstate-condensed", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-shadow: 0 0 15px var(--color);
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+a#btn_hasbro:hover {
+    color: var(--color);
+    box-shadow: 0 0 0px var(--color);
+  }
+
+a#btn_hasbro:hover::before {
+    transform: scale(1);
+    transition-delay: 0.5s;
+    box-shadow: 0 0 10px var(--color),
+      0 0 30px var(--color),
+      0 0 60px var(--color);
+  }
+
+a#btn_hasbro span {
+    position: absolute;
+    background: var(--color);
+    pointer-events: none;
+    border-radius: 2px;
+    box-shadow: 0 0 10px var(--color),
+      0 0 40px var(--color),
+      0 0 30px var(--color),
+      0 0 50px var(--color),
+      0 0 100px var(--color);
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.25s;
+  }
+
+a#btn_hasbro:hover span {
+    opacity: 0;
+    transition-delay: 0s;
+  }
+  
+a#btn_hasbro span:nth-child(1), a#btn_hasbro span:nth-child(3) {
+    width: 40px;
+    height: 4px;
+  }
+
+a#btn_hasbro:hover span:nth-child(1), a#btn_hasbro:hover span:nth-child(3) {
+  transform: translateX(0);
+}
+
+a#btn_hasbro span:nth-child(2), a#btn_hasbro span:nth-child(4) {
+  width: 4px;
+  height: 40px;
+}
+
+a#btn_hasbro:hover span:nth-child(1), a#btn_hasbro:hover span:nth-child(3) {
+  transform: translateY(0);
+}
+
+a#btn_hasbro span:nth-child(1) {
+  top: calc(50% - 2px);
+  left: -50px;
+  transform-origin: left;
+}
+
+a#btn_hasbro:hover span:nth-child(1) {
+  left: 50%;
+}
+
+a#btn_hasbro span:nth-child(3) {
+  top: calc(50% - 2px);
+  right: -50px;
+  transform-origin: right;
+}
+
+a#btn_hasbro:hover span:nth-child(3) {
+    right: 50%;
+  }
+  
+a#btn_hasbro span:nth-child(2) {
+    left: calc(50% - 2px);
+    top: -50px;
+    transform-origin: top;
+  }
+  
+a#btn_hasbro:hover span:nth-child(2) {
+    top: 50%;
+  }
+  
+a#btn_hasbro span:nth-child(4) {
+    left: calc(50% - 2px);
+    bottom: -50px;
+    transform-origin: bottom;
+  }
+  
+a#btn_hasbro:hover span:nth-child(4 ) {
+    bottom: 50%;
+  }
+
+/* aim mark and glowing sourced of https://codepen.io/mortezasharifinia/pen/QWxmEWW */
+
+
+a#btn_samsung {
+    display: inline-block;
+  height: 55px;
+  box-sizing: border-box;
+  border: 2px solid #1477f2;
+  border-radius: 4px;
+  background-color: #1477f2;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: auto;
+  margin-top: 105px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+a#btn_samsung:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(20, 119, 242, 0.7);
+  }
+  
+a#btn_samsung:active {
+    transform: scale(0.95);
+    box-shadow: none;
+  }
+
+/* basic and clarity for Samsung */
+
+a#btn_hsn {
+    display: inline-block;
+    height: 65px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff475d;
+    color: #fff;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: auto;
+    margin-top: 90px;
+    transition: background-color 0.2s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+a#btn_hsn:hover {
+    background: linear-gradient(45deg, #ffcc29, #ff475d);
+    color: #ffffff;
+    border: 2px solid #ff475d;
+  }
+  
+a#btn_hsn:active {
+    transform: scale(0.95);
+  }
+
+  /* basic and clarity for HSN */
+
+  a#btn_ibm {
+    display: inline-block;
+    height: 85px;
+    line-height: 60px;
+    box-sizing: border-box;
+    border: 2px solid #0078D4;
+    border-radius: 8px;
+    background: linear-gradient(to bottom, #0078D4, #00569A);
+    color: #ffffff;
+    font-size: 24px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: bold;
+    font-stretch: expanded;
+    text-decoration-style: dotted;    padding: 12px 12px 12px 12px;
+    margin: auto;
+    margin-top: 80px;
+    transition: background 0.4s ease-in-out, border 0.4s ease-in-out, color 0.4s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  a#btn_ibm::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid #00569A;
+    border-radius: 10px;
+    transition: border 0.4s ease-in-out;
+  }
+  
+  a#btn_ibm:hover {
+    background: linear-gradient(to bottom, #00569A, #0078D4);
+    color: #ffffff;
+    border: 2px solid #00569A;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 120, 212, 0.5);
+  }
+  
+  a#btn_ibm:hover::before {
+    border: 2px solid #0078D4;
+    animation: bounce 0.5s ease infinite alternate;
+  }
+  
+  @keyframes bounce {
+    0% {
+      top: -5px;
+    }
+    100% {
+      top: -10px;
+    }
+  }
+  
+  a#btn_ibm:active {
+    transform: scale(0.95);
+  }
