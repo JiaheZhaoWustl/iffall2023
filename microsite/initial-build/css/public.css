@@ -1,0 +1,83 @@
+/* 公用css样式 */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 引入字体文件 */
+@font-face {
+    font-family: "Neptune";
+    src: url("/tmp/vkfonts/Neptune.otf");
+}
+body {
+    font-size: 14px;
+    line-height: 26px;
+    /* 全局字体 */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+button, input {
+    outline: none;
+    border: none;
+}
+.container {
+    width: 100%;
+}
+/*
+    flex布局：   弹性盒子    详情参考：https://zhuanlan.zhihu.com/p/611136271
+*/
+.header {
+    font-size: 18px;
+    width: 1440px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    font-family: Neptune;
+}
+.navList {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+.navItem {
+    text-align: center;
+    border-right: 5px solid #fff;
+    width: auto;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.navItem:nth-child(6) {
+    border: none;
+}
+/* 当前选中样式   nav使用 */
+.now {
+    color: #F3BF10;
+}
+
+.copy {
+    font-size: 20px;
+    font-weight: 100;
+    color: #BEBEBE;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+b, strong, .date {
+    font-family: Neptune !important;
+}
+b, strong {
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 400;
+}
