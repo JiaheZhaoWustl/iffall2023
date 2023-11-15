@@ -1,0 +1,51 @@
+body {
+    background-color: #000;
+}
+.header {
+    background-color: rgba(0, 0, 0, .5);
+}
+.road_container {
+    width: 1440px;
+    margin: 0 auto;
+    color: #FFFF;
+}
+.content_main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.content {
+    width: 640px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26.6px;
+}
+.strong {
+    color: #F3BF10;
+    font-size: 44px;
+}
+.cloumn {
+    transform: rotate(270deg);
+    font-size: 50px;
+    color: #F3BF10;
+    height: 40px;
+    margin-top: 40px;
+}
+.imageBox {
+    width: 550px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
+.imageBox_item {
+    width: 80%;
+}
+.imageSpan {
+    display: block;
+    width: 420px;
+    font-size: 20px;
+    line-height: 26.6px;
+    font-style: italic;
+    color: #F3BF10;
+}
