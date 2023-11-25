@@ -1,0 +1,122 @@
+@font-face {
+    font-family: Neptuno;
+    src:url("/fonts/Neptuno");
+}
+/* Local Font, display type, capitals only */
+
+li {
+    list-style: none;
+}
+
+.cover_container {
+    position: relative;
+}
+
+.cover_img {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+/* Lance Armstrong Photo, Tour De Lance is in image */
+
+.scroll-btn {
+    position: absolute;
+    display: block;
+    margin-top: -35%;
+    margin-left: 15%;
+    z-index: 1;
+    width: 10%;
+    height: auto;
+    animation: scroll-btn_animation 3s infinite;
+}
+
+@keyframes scroll-btn_animation {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 20%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.cover_text {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.3;
+    font-size: 12px;
+    font-style: italic;
+    color: #F3BF10;
+    margin: -20% 60% 20% 10%;
+}
+
+/* Bottom Copyright bar, good to reuse */
+.copyright {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #F3BF10;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.3;
+    font-size: 5px;
+    font-weight: 100;
+    font-style: italic;
+    margin: 0%;
+    padding: 2% 0% 2% 5%;
+}
+
+
+/* Below: Adjusted Responsive Design for width of description text */
+@media (max-width: 1440px) {
+    .cover_text {
+        font-size: 10px;
+        margin: -19% 60% 20% 10%;
+        line-height: 1.3;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cover_text {
+        font-size: 8px;
+        margin: -17% 60% 20% 10%;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 1024px) {
+    .cover_text {
+        font-size: 6.5px;
+        margin: -17% 60% 20% 10%;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 768px) {
+    .cover_text {
+        font-size: 4px;
+        margin: -17% 60% 20% 10%;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 480px) {
+    .cover_text {
+        font-size: 2.5px;
+        margin: -17% 60% 20% 10%;
+        line-height: 1.2;
+    }
+
+    .copyright {
+        font-size: 2.5px;
+    }
+}
+
+
