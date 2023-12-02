@@ -1,0 +1,255 @@
+body {
+    background-color: #F3BF10 !important;
+}
+
+.road_container {
+    margin: 0 5% auto 5%;
+    color: #000;
+}
+
+.doping_container .header {
+    color: #fff;
+}
+
+.doping_container .now {
+    color: #000;
+}
+
+/* Copypaste from css */
+.header {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color:rgba(243, 191, 16, 0.9);
+    font-size: 18px;
+    width: 95%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    font-family: Neptune;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navItem {
+    color: #fff;
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+    padding-right: 40px;
+}
+
+.navItem:hover {
+    color: #000000; /* Change the color on hover */
+}
+
+.navItem:nth-child(6) {
+    border: none;
+}
+
+.now {
+    color: #000000;
+}
+
+.imageBox {
+    margin-left: 5%;
+    width: 40%;
+    display: flex;
+    justify-content: flex-end; /* Change from flex-start to flex-end */
+    align-items: start;
+}
+
+.imageBox_item img {
+    width: 80%;
+}
+
+.imageBox_item {
+    width: auto;
+}
+
+.imageSpan {
+    display: block;
+    width: 80%;
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 1.6;
+    font-style: italic;
+    color: #F3BF10;
+}
+
+.copy {
+    font-size: 20px;
+    font-weight: 100;
+    color: #BEBEBE;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.date {
+    font-size: 30px; /* Adjusted size for default */
+    color: #F3BF10;
+    margin: 10;
+}
+
+c.strong {
+    font-weight: 600;
+}
+
+.datavis img{
+    width:100%;
+}
+
+/* Modified code */
+.date {
+    font-size: 45px; /* Adjusted size for larger screens */
+    color: #F3BF10;
+}
+
+.contentBox {
+    width: 640px;
+    font-size: 20px;
+    line-height: 26.6px;
+    font-weight: 600;
+}
+
+.sec {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.strong {
+    color: #fff;
+    font-size: 44px;
+}
+
+.sec4 {
+    flex-direction: row-reverse;
+}
+
+.ascent_container {
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e6e6e66e;
+}
+
+.doping_container .date {
+    color: #fff;
+}
+
+.imageSpan {
+    color: #fff;
+}
+
+.line {
+    display: block !important;
+}
+
+.line .date {
+    margin-top: 0;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sec2 {
+    margin-top: 0px;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        font-size: 14px;
+    }
+
+    .imageBox {
+        display: block;
+    }
+
+    .imageSpan {
+        font-size: 10px;
+    }
+
+    .strong, c.strong {
+        font-size: 30px;
+    }
+
+    .contentBox {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .date {
+        font-size: 24px;
+    }
+
+    .copy {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 12px;
+        height: 80px;
+        overflow-x: scroll;
+    }
+
+    .imageBox {
+        display: block;
+    }
+
+    .contentBox {
+        width: 60%;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .imageSpan {
+        font-size: 10px;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+
+    .strong, c.strong {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 426px) {
+    .header {
+        font-size: 12px;
+        height: 80px;
+        overflow-x: scroll;
+    }
+
+    .imageBox {
+        display: block;
+    }
+
+    .contentBox {
+        width: 50%;
+        font-size: 9px;
+        line-height: 15px;
+    }
+
+    .imageSpan {
+        font-size: 7px;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+
+    .strong, c.strong {
+        font-size: 14px;
+    }
+}

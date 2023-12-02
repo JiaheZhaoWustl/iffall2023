@@ -1,0 +1,117 @@
+body {
+    background-color: #000;
+}
+
+.header {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 18px;
+    width: 95%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    font-family: Neptune;
+}
+
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navItem {
+    color: #fff;
+    text-align: center;
+    width: auto;
+    cursor: pointer;
+    padding-right: 40px;
+}
+
+.navItem:hover {
+    color: #F3BF10; /* Change the color on hover */
+}
+
+.navItem:nth-child(6) {
+    border: none;
+}
+
+.now {
+    color: #F3BF10;
+}
+
+.road_container {
+    margin: 30% 5% auto 5%;
+    color: #FFFF;
+}
+
+.container {
+    width: 640px;
+    font-size: 20px;
+    line-height: 26.6px;
+    font-weight: 600;
+}
+
+.copy {
+    font-size: 20px;
+    font-weight: 100;
+    color: #BEBEBE;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1024px) {
+    .header {
+        font-size: 14px;
+    }
+
+    .container {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .copy {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 12px;
+        height: 80px;
+        overflow-x: scroll;
+    }
+
+    .container {
+        width: 60%;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 426px) {
+    .header {
+        font-size: 12px;
+        height: 80px;
+        overflow-x: scroll;
+    }
+
+    .container {
+        width: 50%;
+        font-size: 9px;
+        line-height: 15px;
+    }
+
+    .copy {
+        font-size: 10px;
+    }
+}
